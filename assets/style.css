@@ -1,0 +1,147 @@
+:root {
+    --primary-color: gray;
+    --secondary-color: black;
+    --tertiary-color: #39a6b2;
+}
+  
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+    background: var(--tertiary-color);
+    color: var(--secondary-color);
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--tertiary-color);
+}
+
+header h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 36px;
+    color: var(--secondary-color);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+header a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+  
+header nav {
+    margin: 7px 0;
+}
+  
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+  
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+/*my info section*/
+.my-info {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    color: var(--secondary-color);
+    width: 40%;
+    border-bottom: 4px solid var(--tertiary-color);
+    margin: auto;
+    margin-bottom: 7px;
+}
+
+.my-info div {
+    color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+ .info-p {
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+/*projects section */
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--primary-color);
+}
+/*first project*/
+.first-project {
+    text-align: center;
+}
+
+.first-project a img {
+    flex: 1 80%;
+    width: 80%;
+}
+
+/* other projects section*/
+.other-projects {
+    background-color: var(--primary-color);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.secondary-project{
+    border: 4px solid var(--tertiary-color);
+    flex: 1 50%;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.secondary-project a img{
+    flex: 1 100%;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.secondary-project-label {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    display: flex;
+    color: var(--secondary-color);
+    font-size: 18px;
+    border-top: 4px solid var(--tertiary-color);
+    font-weight: bold;
+}
+
+.project-link {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.contact-info {
+    background-color: var(--primary-color);
+    text-align: center;
+    font-size: 18px;
+}
